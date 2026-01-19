@@ -1,4 +1,4 @@
-# car_rental_booking
+Car Rental Booking
 
 A new Flutter project.
 
