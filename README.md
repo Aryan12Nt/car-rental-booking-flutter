@@ -4,13 +4,48 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+What this is
 
-A few resources to get you started if this is your first Flutter project:
+A minimal multi-screen Flutter MVP for a Car Rental Booking app.
+Features:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Login (simple, stored in SharedPreferences)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Browse cars (from lib/data/mock_cars.dart)
+
+- Car detail page
+
+- Booking form (select start/end dates, enter name & pickup location)
+
+- Booking confirmation & booking history (stored locally with Hive)
+
+Requirements
+
+- Flutter SDK (compatible with Dart SDK >= 3.8.0). Use a recent stable Flutter release.
+
+- Android Studio / Xcode (for mobile emulators) or a physical device.
+
+- Android toolchain set up (ANDROID_HOME/SDK installed). For iOS builds, Xcode & CocoaPods installed.
+
+Quick setup
+Open a terminal in the project root (where pubspec.yaml is located):
+
+1. Get packages:
+   - flutter pub get
+2. Run the app
+   - flutter run
+
+Project structure (key files)
+  lib/
+  main.dart              # app entry + provider setup + router init
+  data/mock_cars.dart    # mock car data
+  models/
+    car.dart             # Car model (Hive typeId 0)
+    booking.dart         # Booking model (Hive typeId 1)
+    car.g.dart           # GENERATED adapter (present)
+    booking.g.dart       # GENERATED adapter (present)
+  providers/             # business logic (auth, booking, UI)
+  router/                # go_router configuration
+  screens/               # UI screens (login, list, detail, booking, history)
+  widgets/               # small reusable widgets
+pubspec.yaml
