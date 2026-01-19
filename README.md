@@ -6,7 +6,7 @@ A new Flutter project.
 
 What this is
 
-A minimal multi-screen Flutter MVP for a Car Rental Booking app.
+A multi-screen Flutter MVP for a Car Rental Booking app.
 Features:
 
 - Login (simple, stored in SharedPreferences)
@@ -23,9 +23,9 @@ Requirements
 
 - Flutter SDK (compatible with Dart SDK >= 3.8.0). Use a recent stable Flutter release.
 
-- Android Studio / Xcode (for mobile emulators) or a physical device.
+- Android Studio / Xcode for mobile emulators or a physical device.
 
-- Android toolchain set up (ANDROID_HOME/SDK installed). For iOS builds, Xcode & CocoaPods installed.
+- Android toolchain set up. For iOS builds, Xcode & CocoaPods installed.
 
 Quick setup
 Open a terminal in the project root (where pubspec.yaml is located):
